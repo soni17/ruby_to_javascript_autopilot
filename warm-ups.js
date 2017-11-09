@@ -49,20 +49,22 @@ console.log(total);
 
 //--------------------------------------------------
 
+for (height=3; height<16; height++){
 
+  if (height > 9){
+    console.log('You can get on the rollercoaster!');
+  } else {
+    console.log('You are too short to ride this rollercoaster.');
+  }
 
-
-
-
-
-
-
+}
 //----------------------------------------------------
 
+var containers = ['purse','wallet','backpack'];
 
-
-
-
+containers.forEach(
+  function(container){ console.log(container); }
+);
 
 //----------------------------------------------------
 
@@ -70,6 +72,15 @@ function helloWorld(){
   console.log("Hello World!");
 }
 
-helloWorld;
+helloWorld();
 
 //-----------------------------------------------------
+
+function add(firstNum,secondNum){
+  return firstNum+secondNum;
+}
+
+var amount = add(5,7);
+console.log(amount);
+
+//-------------------------------------------------
